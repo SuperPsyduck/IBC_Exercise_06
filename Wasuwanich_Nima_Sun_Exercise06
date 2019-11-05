@@ -1,0 +1,21 @@
+#Paul Wasuwanich, Maisha Khair Nima and Miaomiao Sun
+
+Q1.
+head (wages)
+file<-wages
+n<-5
+head (file, n)
+  
+Q2.
+a) data=read.table(file="iris.csv", header=TRUE,sep=",")
+skim(data)/dim(data)
+data[c(150,151),cd(4,5)]
+
+b) summary(data)
+c) sum(data$Sepal.Width > 3.5)
+
+d) setosa=data[grep("setosa", iris$Species), ]
+write.table(setosa, file="setosa.csv",sep=",",row.names = F)
+
+e) virginica=data[grep("virginica", iris$Species), ]
+summary(virginica$Petal.Length)
